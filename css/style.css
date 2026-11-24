@@ -1,1 +1,38 @@
-/* Här skrivs all din CSS */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FF3723 20%, #37496D 48%, #332C2C 100%);
+    background-attachment: fixed;
+}
+#container{
+    background-color: transparent;
+    display:grid;
+    height: 100vh;
+    gap: 14px;
+    grid-template-columns: 30% 25% 22.5% 22.5%;
+    grid-template-rows: 10% 20% 70% 14% 20%;
+    grid-template-areas:
+    'hd hd nav nav'
+    'hd hd mn mn'
+    'as mn mn mn'
+    'as sn sn sn'
+    'ft ft ft ft'
+}   
+
+header{
+    grid-area: hd;
+    background-color: #995853
+}
+
+nav{
+    grid-area: nav;
+    background-color: #995853;
+}
+
+aside{
+    grid-area: as;
+    background-image: linear-gradient(0deg, rgba(4, 9, 10, .48), rgba(4, 9, 10, .28)), url('Bilder/slenderman-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
